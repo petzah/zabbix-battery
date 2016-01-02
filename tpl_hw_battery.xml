@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2016-01-02T09:40:34Z</date>
+    <date>2016-01-02T10:46:14Z</date>
     <groups>
         <group>
             <name>Linux servers</name>
@@ -11,6 +11,7 @@
         <template>
             <template>tpl_hw_battery</template>
             <name>tpl_hw_battery</name>
+            <description/>
             <groups>
                 <group>
                     <name>Linux servers</name>
@@ -48,7 +49,11 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <filter>:</filter>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
                     <lifetime>1</lifetime>
                     <description/>
                     <item_prototypes>
@@ -185,7 +190,7 @@
                             <name>Battery {#BATN} Charge Full</name>
                             <type>0</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <snmp_oid/>
                             <key>battery.item[{#BATN},charge_full]</key>
                             <delay>3600</delay>
@@ -194,7 +199,7 @@
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
-                            <units/>
+                            <units>Ah</units>
                             <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
@@ -203,7 +208,7 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
+                            <formula>0.000001</formula>
                             <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
@@ -228,7 +233,7 @@
                             <name>Battery {#BATN} Charge Full Design</name>
                             <type>0</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <snmp_oid/>
                             <key>battery.item[{#BATN},charge_full_design]</key>
                             <delay>86400</delay>
@@ -237,7 +242,7 @@
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
-                            <units/>
+                            <units>Ah</units>
                             <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
@@ -246,7 +251,7 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
+                            <formula>0.000001</formula>
                             <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
@@ -271,7 +276,7 @@
                             <name>Battery {#BATN} Charge Now</name>
                             <type>0</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <snmp_oid/>
                             <key>battery.item[{#BATN},charge_now]</key>
                             <delay>30</delay>
@@ -280,7 +285,7 @@
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
-                            <units/>
+                            <units>Ah</units>
                             <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
@@ -289,7 +294,7 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
+                            <formula>0.000001</formula>
                             <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
@@ -314,7 +319,7 @@
                             <name>Battery {#BATN} Current Now</name>
                             <type>0</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <snmp_oid/>
                             <key>battery.item[{#BATN},current_now]</key>
                             <delay>30</delay>
@@ -323,7 +328,7 @@
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
-                            <units/>
+                            <units>A</units>
                             <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
@@ -332,7 +337,7 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
+                            <formula>0.000001</formula>
                             <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
@@ -400,7 +405,7 @@
                             <name>Battery {#BATN} Energy Full</name>
                             <type>0</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <snmp_oid/>
                             <key>battery.item[{#BATN},energy_full]</key>
                             <delay>3600</delay>
@@ -409,7 +414,7 @@
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
-                            <units/>
+                            <units>Ah</units>
                             <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
@@ -418,7 +423,7 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
+                            <formula>0.000001</formula>
                             <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
@@ -443,7 +448,7 @@
                             <name>Battery {#BATN} Energy Full Design</name>
                             <type>0</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <snmp_oid/>
                             <key>battery.item[{#BATN},energy_full_design]</key>
                             <delay>86400</delay>
@@ -452,7 +457,7 @@
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
-                            <units/>
+                            <units>Ah</units>
                             <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
@@ -461,7 +466,7 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
+                            <formula>0.000001</formula>
                             <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
@@ -486,7 +491,7 @@
                             <name>Battery {#BATN} Energy Now</name>
                             <type>0</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <snmp_oid/>
                             <key>battery.item[{#BATN},energy_now]</key>
                             <delay>30</delay>
@@ -495,7 +500,7 @@
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
-                            <units/>
+                            <units>Ah</units>
                             <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
@@ -504,7 +509,7 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
+                            <formula>0.000001</formula>
                             <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
@@ -615,7 +620,7 @@
                             <name>Battery {#BATN} Power Now</name>
                             <type>0</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <snmp_oid/>
                             <key>battery.item[{#BATN},power_now]</key>
                             <delay>30</delay>
@@ -624,7 +629,7 @@
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
-                            <units/>
+                            <units>A</units>
                             <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
@@ -633,7 +638,7 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
+                            <formula>0.000001</formula>
                             <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
@@ -873,7 +878,7 @@
                             <name>Battery {#BATN} Voltage Min Design</name>
                             <type>0</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <snmp_oid/>
                             <key>battery.item[{#BATN},voltage_min_design]</key>
                             <delay>86400</delay>
@@ -882,7 +887,7 @@
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
-                            <units/>
+                            <units>V</units>
                             <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
@@ -891,7 +896,7 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
+                            <formula>0.000001</formula>
                             <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
@@ -916,7 +921,7 @@
                             <name>Battery {#BATN} Voltage Now</name>
                             <type>0</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
+                            <multiplier>1</multiplier>
                             <snmp_oid/>
                             <key>battery.item[{#BATN},voltage_now]</key>
                             <delay>30</delay>
@@ -925,7 +930,7 @@
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
-                            <units/>
+                            <units>V</units>
                             <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
@@ -934,7 +939,7 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
+                            <formula>0.000001</formula>
                             <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
